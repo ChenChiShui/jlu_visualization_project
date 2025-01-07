@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0e7ff); /* 背景渐变色 */
+    color: #333;
+}
+
+#app {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平居中 */
+    gap: 20px; /* 图表之间的间距 */
+    padding: 20px;
+}
+
+#chart-container, #chart-container-mouth {
+    width: 80%; /* 图表宽度 */
+    height: 500px; /* 图表高度 */
+    background: #fff; /* 背景色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 阴影 */
+}

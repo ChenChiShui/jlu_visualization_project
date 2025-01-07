@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界温度地图</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+  <link rel="stylesheet" href="map.css">
+</head>
+<body>
+<div id="app">
+  <!-- 悬浮框控件 -->
+  <div id="floating-controls">
+    <label for="year-input">选择年份：</label>
+    <input type="number" id="year-input" min="1850" max="2012" value="2012">
+    <button id="update-button">更新地图</button>
+  </div>
+
+  <!-- 图表容器 -->
+  <div id="chart-container"></div>
+  <div class="loading" id="loading">加载数据...</div>
+</div>
+<button id="return-home-button" onclick="window.location.href='/'" style="position: fixed; top: 5px; left: 15px; z-index: 1000;">
+  返回主页
+</button>
+<script src="../../js/main.js"></script>
+<script src="map.js"></script>
+</body>
+</html>

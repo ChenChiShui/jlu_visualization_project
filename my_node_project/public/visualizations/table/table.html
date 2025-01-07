@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温度数据表格</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<div id="app">
+    <!-- 表格容器 -->
+    <div id="table-container">
+        <table id="data-table">
+            <thead>
+            <tr>
+                <th>日期</th>
+                <th>平均温度 (°C)</th>
+                <th>温度不确定性</th>
+                <th>城市</th>
+                <th>国家</th>
+                <th>纬度</th>
+                <th>经度</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- 表格内容动态生成 -->
+            </tbody>
+        </table>
+        <div class="loading" id="loading">加载数据中，请稍候...</div>
+    </div>
+    <!-- 分页控件 -->
+    <div id="pagination-container"></div>
+</div>
+
+
+<button id="return-home-button" onclick="window.location.href='/'" style="position: fixed; top: 5px; left: 15px; z-index: 1000;">
+    返回主页
+</button>
+<script src="../../js/main.js"></script>
+
+<script src="table.js"></script>
+</body>
+</html>

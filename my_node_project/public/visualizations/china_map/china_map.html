@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国温度地图</title>
+  <!-- 引入 ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <!-- 引入本地的中国地图数据 -->
+  <script src="./china.js"></script>
+  <!-- 引入 CSS -->
+  <link rel="stylesheet" href="china_map.css">
+</head>
+<body>
+<div id="app">
+  <div id="floating-controls">
+    <label for="year-input">选择年份：</label>
+    <input type="number" id="year-input" min="1800" max="2012" value="2012">
+    <button id="update-button">更新地图</button>
+  </div>
+
+  <!-- 图表容器 -->
+  <div id="chart-container"></div>
+  <div class="loading" id="loading">加载数据...</div>
+</div>
+<button id="return-home-button" onclick="window.location.href='/'" style="position: fixed; top: 5px; left: 15px; z-index: 1000;">
+  返回主页
+</button>
+<script src="../../js/main.js"></script>
+<script src="china_map.js"></script>
+</body>
+</html>

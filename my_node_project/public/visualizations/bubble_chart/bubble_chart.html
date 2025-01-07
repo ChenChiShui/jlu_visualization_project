@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纬度-月份温度分布气泡图</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="bubble_chart.css">
+</head>
+<body>
+<div id="app">
+    <!-- 图表容器 -->
+    <div id="chart-container"></div>
+    <div class="loading" id="loading">加载数据...</div>
+</div>
+<button id="return-home-button" onclick="window.location.href='/'" style="position: fixed; top: 5px; left: 15px; z-index: 1000;">
+    返回主页
+</button>
+<script src="../../js/main.js"></script>
+<script src="bubble_chart.js"></script>
+</body>
+</html>

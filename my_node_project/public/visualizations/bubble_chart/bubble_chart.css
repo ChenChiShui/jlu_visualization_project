@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0e7ff); /* 背景渐变色 */
+    color: #333;
+    overflow-x: hidden; /* 防止横向滚动条 */
+}
+
+/* 应用容器 */
+#app {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 图表容器样式 */
+#chart-container {
+    width: 80%;
+    height: 620px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 加载中的提示信息 */
+.loading {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+/* 输入框样式 */
+#year-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#year-input:focus {
+    border-color: #007BFF;
+}
+
+/* 按钮样式 */
+#update-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#update-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* 鼠标悬停时轻微放大 */
+}
+
+#update-button:active {
+    transform: scale(0.95); /* 点击时缩小效果 */
+}

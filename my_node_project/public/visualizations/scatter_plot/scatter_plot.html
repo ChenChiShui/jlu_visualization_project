@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温度数据散点图</title>
+    <link rel="stylesheet" href="scatter_plot.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- 散点图容器 -->
+    <div id="scatter-chart-container" style="width: 90%; height: 500px; margin: 50px auto;"></div>
+</div>
+
+<button id="return-home-button" onclick="window.location.href='/'" style="position: fixed; top: 5px; left: 15px; z-index: 1000;">
+    返回主页
+</button>
+<script src="../../js/main.js"></script>
+<script src="scatter_plot.js"></script>
+</body>
+</html>

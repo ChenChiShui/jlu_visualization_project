@@ -1,0 +1,347 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f4f9, #e0e7ff); /* 背景渐变色 */
+  color: #333;
+  line-height: 1.6;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.center-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* 导航栏 */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #0056b3); /* 渐变背景色 */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: -15px; /* 将下边界向上移动 5px */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background-color: #003d80;
+  transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+/* 优化整体样式 */
+.overview {
+  padding: 2rem;
+  background: #f9f9f9; /* 浅灰色背景 */
+  border-radius: 12px; /* 卡片圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+  margin: 2rem auto;
+  max-width: 800px; /* 限制最大宽度 */
+  text-align: left; /* 左对齐 */
+  line-height: 1.8; /* 行高 */
+  color: #333; /* 文字颜色 */
+}
+
+.overview h2 {
+  font-size: 2rem;
+  color: #007bff; /* 标题文字颜色 */
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff; /* 左侧边框强调标题 */
+  padding-left: 0.5rem;
+}
+
+.overview p {
+  font-size: 1.1rem; /* 段落字体大小 */
+  color: #555; /* 段落字体颜色 */
+  margin-bottom: 1rem; /* 段落间距 */
+  line-height: 1.8; /* 增加行间距，提升可读性 */
+}
+
+.overview p strong {
+  color: #007bff; /* 加粗的文字颜色 */
+}
+
+.overview p em {
+  font-style: italic; /* 数据集名称斜体 */
+  color: #666;
+}
+
+/* 特殊段落样式 */
+.overview p.cta {
+  font-weight: bold; /* 突出强调 */
+  color: #333;
+  text-align: center; /* 居中对齐 */
+  margin-top: 1.5rem;
+}
+
+/* 主内容样式 */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff;
+  padding-left: 0.5rem;
+}
+
+/* 卡片布局及动画 */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0; /* 初始状态为透明 */
+  transform: translateY(20px); /* 初始状态下移 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 动画效果 */
+}
+
+.card.loaded {
+  opacity: 1; /* 动画结束状态为不透明 */
+  transform: translateY(0); /* 动画结束状态为原位置 */
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* 关于部分样式 */
+.about {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff;
+  padding-left: 0.5rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: #555;
+}
+
+.about ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about h3 {
+    font-size: 1.3rem;
+  }
+
+  .about p,
+  .about ul li {
+    font-size: 1rem;
+  }
+}
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f4f9, #e0e7ff); /* 背景渐变色 */
+  color: #333;
+  line-height: 1.6;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.center-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* 导航栏 */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #0056b3); /* 渐变背景色 */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background-color: #003d80;
+  transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+/* 总体说明区域 */
+.overview {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.overview h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overview p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* 主内容样式 */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 隐藏特定 h2 标题 */
+.container h2 {
+  display: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}

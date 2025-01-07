@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吉林大学 & 东软集团 可视化企业实训</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<div class="navbar">
+  <div class="box">
+    <h1 class="center-title">吉林大学 & 东软集团 可视化企业实训</h1>
+  </div>
+  <ul>
+    <li><a href="#" class="active">首页</a></li>
+    <li><a href="#visualizations">可视化图表</a></li>
+    <li><a href="#about">关于</a></li>
+  </ul>
+</div>
+
+<!-- 总体说明 -->
+<div class="overview">
+  <h2>  项目总体说明</h2>
+  <p>
+      本项目旨在通过对全球气候变化数据的分析，呈现主要城市温度的变化趋势及相关地理因素。
+  </p>
+  <p>
+      项目利用 <strong>Node.js</strong> 构建后端服务，结合 <strong>HTML</strong>、<strong>CSS</strong>、<strong>JavaScript</strong> 开发前端界面，配合 <strong>ECharts</strong> 实现数据的动态可视化展示。<br>
+      数据存储采用 <strong>MySQL 数据库</strong>，分析数据来源于 Kaggle 上的 <em>Climate Change: Earth Surface Temperature Data</em> 数据集。
+  </p>
+  <p>
+      通过构建 <strong>十二张精美的交互式图表</strong>，项目从多个角度深入分析气候变化趋势，揭示全球气候变化的特征和规律。
+  </p>
+  <p class="cta">
+    点击下方的可视化按钮，即可查看对应的图表详情。
+  </p>
+</div>
+
+<!-- 主内容区域 -->
+<div class="container">
+  <!-- 隐藏标题 -->
+  <h2 id="visualizations"></h2>
+  <div class="cards">
+    <!-- 动态生成的卡片会插入到这里 -->
+  </div>
+</div>
+
+<!-- 关于部分 -->
+<div class="about" id="about">
+  <h2>关于本项目</h2>
+
+  <!-- 技术栈 -->
+  <h3>技术栈</h3>
+  <ul>
+    <li><strong>后端</strong>：Node.js、Express.js</li>
+    <li><strong>前端</strong>：HTML5、CSS3、JavaScript（ECharts 可视化库）</li>
+    <li><strong>数据库</strong>：MySQL</li>
+    <li><strong>数据来源</strong>：Kaggle 数据集 - Climate Change: Earth Surface Temperature Data</li>
+  </ul>
+
+  <!-- 制作者个人信息 -->
+  <h3>制作者个人信息</h3>
+  <ul>
+    <li><strong>姓名</strong>：陈驰水</li>
+    <li><strong>学号</strong>：55220331</li>
+    <li><strong>邮箱</strong>：<a href="mailto:walter_chen.bj@outlook.com">walter_chen.bj@outlook.com</a></li>
+    <li><strong>TEL & WeChat</strong>：18810690950</li>
+  </ul>
+
+  <!-- 项目目标 -->
+  <h3>项目目标</h3>
+  <ul>
+    <li>掌握全栈开发技术，包括后端 API 开发、前端页面设计和数据可视化展示。</li>
+    <li>通过真实数据分析与展示，提升气候变化数据的直观性和可读性。</li>
+    <li>提供一个美观、动态、交互友好的数据展示平台，便于用户理解气候变化问题。</li>
+  </ul>
+</div>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

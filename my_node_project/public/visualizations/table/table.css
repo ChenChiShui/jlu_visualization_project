@@ -1,0 +1,114 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0e7ff); /* 背景渐变 */
+    color: #333;
+    overflow-x: hidden; /* 防止横向滚动条 */
+}
+
+/* 应用容器 */
+#app {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 表格容器样式 */
+#table-container {
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#table-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* 表格样式 */
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+#data-table th,
+#data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#data-table th {
+    background: #007BFF;
+    color: #fff;
+    font-weight: bold;
+}
+
+#data-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+#data-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* 加载提示信息 */
+.loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* 分页控件样式 */
+#pagination-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#pagination-container button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination-container button:hover:not(:disabled) {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 返回主页按钮样式 */
+#return-home-button {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
